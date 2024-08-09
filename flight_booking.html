@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="booking.css">
+    </head>
+    <body>
+        <h1 class="title">Air Ticket Booking</h1>
+        <form>
+    <div class="container">
+        <div class="item">
+            <h3>
+                Personal Information
+            </h3>
+            
+            Full name: <br>
+            <input type="text" name="fullName" placeholder="Enter your full name here." required="true"> <br> <br>
+            Email: <br>
+            <input type="email" name="email" placeholder="Enter your email here." required="true"> <br> <br>
+            Phone Number: <br>
+            <input type="tel" name="phoneNumber" placeholder="Eg. 613-000-0000" required="true"> <br> <br>
+            Passport Number: <br>
+            <input type="number" name="passportNumber" placeholder="Enter your passport number here." required="true"> <br> <br>
+        </div>
+        <div class="item">
+            <h3>
+                Flight Details
+            </h3>
+            Departure City: <br>
+            <select name="departureCity" required="true">
+                <option value="">
+                    Please select an option.
+                </option>
+                <option value="ottawa">
+                    Ottawa
+                </option>
+                <option value="montreal">
+                    Montreal
+                </option>
+                <option value="toronto">
+                    Toronto
+                </option>
+                <option value="calgary">
+                    Calgary
+                </option>
+                <option value="vancouver">
+                    Vancouver
+                </option>
+                <option value="edmonton">
+                    Edmonton
+                </option>
+            </select><br><br>
+            Destination City: <br>
+            <select name="destinationCity" required="true">
+                <option value="">
+                    Please select an option.
+                </option>
+                <option value="ottawa">
+                    Ottawa
+                </option>
+                <option value="montreal">
+                    Montreal
+                </option>
+                <option value="toronto">
+                    Toronto
+                </option>
+                <option value="calgary">
+                    Calgary
+                </option>
+                <option value="vancouver">
+                    Vancouver
+                </option>
+                <option value="edmonton">
+                    Edmonton
+                </option>
+            </select><br><br>
+            Departure Date: <br>
+            <input type="date" name="departureDate" required="true"><br><br>
+            Return Date: <br>
+            <input type="date" name="returnDate" required="true"><br><br>
+        </div>
+        <div class="item2">
+            <h3>Flight Details 2</h3>
+            Class: <br>
+            <input type="radio" name="class" value="economy"><label for="economy">Economy</label><br>
+            <input type="radio" name="class" value="premiumEconomy"><label for="premiumEconomy">Premium Economy</label><br>
+            <input type="radio" name="class" value="business"><label for="business">Business</label><br>
+            <input type="radio" name="class" value="firstClass"><label for="firstClass">First Class</label><br><br>
+
+            Number of Passengers: <br>
+            <input required="true" class="inputBox" type="number" name="numOfPassengers" placeholder="Enter the number of Passengers" min="1" max="10"><br>
+        </div>
+        <div class="item">
+            <h3>
+                Additional options.
+            </h3>
+            Meal Prefrence:<br>
+            <input type="checkbox" name="meal" value="vegetarian">Vegetarian <br>
+            <input type="checkbox" name="meal" value="chicken">Chicken<br>
+            <input type="checkbox" name="meal" value="fish">Fish<br><br>
+            Travel Insurance:<br>
+            <input type="checkbox" name="insurance" value="none">No insurance <br>
+            <input type="checkbox" name="insurance" value="RBC">RBC <br>
+            <input type="checkbox" name="insurance" value="blueCross">Blue Cross <br>
+            <input type="checkbox" name="insurance" value="TD">TD <br> <br>
+        </div>
+    </div>
+    <br>
+    <div class="center">
+        <input type="submit" class="submitButton">
+    </div>
+        </form>
+        
+        
+    </body>
+</html>

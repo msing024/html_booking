@@ -1,0 +1,62 @@
+body {
+    background-color: aliceblue;
+}
+
+.title {
+    text-align: center;
+    width:300px;
+    background-color: white;
+    padding-left:58%;
+    
+}
+
+.container {
+    border: 3px solid black;
+    border-collapse: collapse;
+    align-items: center;
+    display: flex;
+   max-width:800px; 
+    padding:10px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.item {
+ flex:auto;
+ border:1px dashed black;
+ padding:auto;
+ margin:auto;
+ flex-shrink: 1;
+ height:400px;
+ padding:20px;
+}
+
+.item2 {
+    flex:160px;
+    border:1px dashed black;
+    padding-right:20px;
+    margin:auto;
+    flex-shrink: 1;
+    height:400px;
+    padding:20px;
+}
+
+.inputBox {
+    width:140;
+}
+
+.submitButton {
+    
+    width:800px;
+    height:50px;
+    font-size: 25px;
+
+}
+
+.center {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
